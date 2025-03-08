@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal home page with navigation links and sections.">
+    <meta name="author" content="Saulo Moraes">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/Homepage.css">
+    <script src="Scripts/Homepage.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="Images/MyPhoto.jpg" alt="My Photo" class="profile-pic">
+        <span>Saulo Moraes</span>
+    </header>
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="https://github.com/SauloMoraes-00">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/saulocostamoraes" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>Course Work</h2>
+            <ul>
+                <li><a href="https://github.com/example-project1" target="_blank">Project 1</a></li>
+                <li><a href="https://github.com/example-project2" target="_blank">Project 2</a></li>
+                <li><a href="https://github.com/example-project3" target="_blank">Project 3</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Londrina, Brasil</h2>
+            <img src="Images/Londrina.webp" alt="Londrina Lago">
+        </section>
+        <section>
+            <h2>Web and Computer Programing Certificate</h2>
+            <p id="total-credits"></p>
+            <button id="all-btn">All</button>
+            <button id="cse-btn">CSE</button>
+            <button id="wdd-btn">WDD</button>
+            <div id="course-container"></div>       
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Your Name | Your State or Country</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="Scripts/Homepage.js"></script>
+</body>
+</html>
