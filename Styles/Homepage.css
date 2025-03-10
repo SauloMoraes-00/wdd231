@@ -127,6 +127,39 @@ main section img {
     background-color: #d3ffd3; /* Light green for completed courses */
 }
 
+main {
+    display: flexbox;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+main section {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.course-card {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.completed {
+    background-color: #d3ffd3; /* Light green for completed courses */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2b4d72;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
 /* Small screen navigation */
 @media (max-width: 768px) {
     .nav-container {
@@ -146,7 +179,7 @@ main section img {
         text-align: left;
     }
 
-    nav ul.show {
+    nav.show div ul {
         display: flex;
     }
 
@@ -191,37 +224,4 @@ main section img {
         width: 100%;
         margin-bottom: 10px;
     }
-}
-
-main {
-    display: flexbox;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-}
-
-main section {
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.course-card {
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.completed {
-    background-color: #d3ffd3; /* Light green for completed courses */
-}
-
-/* Footer Styling */
-footer {
-    background-color: #2b4d72;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
 }
