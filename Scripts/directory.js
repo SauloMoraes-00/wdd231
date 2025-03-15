@@ -7,12 +7,11 @@ button.addEventListener("click", function() {
 });
 
 async function displayCompanyData() {
-    const url = 'data/members.json'; // Make sure this path is correct
+    const url = 'data/members.json'; 
     try {
-        // Get the container element
+        
         const companyListContainer = document.getElementById("business-container");
 
-        // Clear the container before displaying new data
         companyListContainer.innerHTML = '';
 
         // Fetch company data from the JSON file
