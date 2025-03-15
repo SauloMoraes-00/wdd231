@@ -17,7 +17,6 @@ header {
     padding: 1rem 2vw;
 }
 
-/* Ensure the nav takes up both columns in the second row */
 nav {
     display: grid;
     grid-template-rows: 0fr; /* Hidden by default */
