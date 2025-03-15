@@ -1,0 +1,34 @@
+@media only screen and (min-width: 610px) {
+    
+    #myButton {
+        display: none;
+    }
+
+    /* Ensure the menu is always visible and horizontal */
+    ul#nav-menu {
+        display: flex !important;  /* Override any hidden state */
+        flex-direction: row;       /* Ensure links are horizontal */
+        justify-content: flex-end; /* Align links to the right */
+        align-items: center;
+        gap: 1rem; /* Adds space between links */
+        padding: 0;
+        margin: 0;
+    }
+
+    ul#nav-menu li {
+        list-style: none;
+    }
+
+    ul#nav-menu a {
+        white-space: nowrap; /* Prevents wrapping */
+        padding: 0.75rem 1rem;
+    }
+
+    ul#nav-menu a:hover {
+        background-color: var(--secondary-color);
+    }
+
+    header {
+        align-items: end;
+    }
+}
