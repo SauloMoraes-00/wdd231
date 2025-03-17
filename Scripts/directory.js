@@ -7,7 +7,7 @@ button.addEventListener("click", function() {
 });
 
 async function displayCompanyData() {
-    const url = '../chamber/Data/members.json'; 
+    const url = '../Chamber/Data/members.json'; 
     try {
         
         const companyListContainer = document.getElementById("business-container");
