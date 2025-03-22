@@ -48,3 +48,72 @@ async function displayCompanyData() {
 document.addEventListener("DOMContentLoaded", async () => {
     await displayCompanyData();
 });
+
+// Weather API
+const myTemp = document.querySelector('#temperature');
+const myDesc = document.querySelector('#description');
+const myHigh = document.querySelector('#high');
+const myLow = document.querySelector('#low');
+const myHumidity = document.querySelector('#humidity');
+
+const myKey = '0e50adcc8e2b4233429e648c6eb25020';
+const myLat = '-23.298893276919777';
+const myLon = '-51.16919622755564';
+const myURL = "//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}&units=imperial";
+
+async function apiFetch() {
+    try {
+      const response = await fetch(myURL);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data); // testing only
+        // displayResults(data); // uncomment when ready
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
+  }
+  
+  apiFetch();
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    // Set current year dynamically
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    
+    // Set last modified date dynamically
+    const lastModified = new Date(document.lastModified);
+    document.getElementById("lastModified").textContent = `Last Update: ${lastModified.toLocaleString()}`;
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    fetch("Data/members.json")
+        .then(response => response.json())
+        .then(members => {
+            
+            const eligibleMembers = members.filter(member => member.membership_level >= 2);
+            
+            const shuffled = eligibleMembers.sort(() => 0.5 - Math.random());
+            
+            const spotlightMembers = shuffled.slice(0, Math.floor(Math.random() * 2) + 2);
+            
+            const spotlightContainer = document.getElementById("spotlight");
+            
+            spotlightMembers.forEach(member => {
+                const card = document.createElement("div");
+                card.classList.add("spotlight-card");
+                card.innerHTML = `
+                    <img src="${member.image}" alt="${member.name} Logo">
+                    <h3>${member.name}</h3>
+                    <p><strong>Endereço:</strong> ${member.address}</p>
+                    <p><strong>Telefone:</strong> ${member.phone}</p>
+                    <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+                    <p><strong>Nível:</strong> ${member.membership_level === 3 ? "Gold" : "Silver"}</p>
+                `;
+                spotlightContainer.appendChild(card);
+            });
+        })
+        .catch(error => console.error("Erro ao carregar os membros:", error));
+});
