@@ -107,10 +107,10 @@ async function apiFetch() {
                 card.innerHTML = `
                     <img src="${member.image}" alt="${member.name} Logo">
                     <h3>${member.name}</h3>
-                    <p><strong>Endereço:</strong> ${member.address}</p>
-                    <p><strong>Telefone:</strong> ${member.phone}</p>
+                    <p><strong>Adress:</strong> ${member.address}</p>
+                    <p><strong>Phone:</strong> ${member.phone}</p>
                     <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
-                    <p><strong>Nível:</strong> ${member.membership_level === 3 ? "Gold" : "Silver"}</p>
+                    <p><strong>Level:</strong> ${member.membership_level === 3 ? "Gold" : "Silver"}</p>
                 `;
                 spotlightContainer.appendChild(card);
             });
