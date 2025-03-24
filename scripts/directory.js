@@ -56,7 +56,7 @@ const myHigh = document.querySelector('#high');
 const myLow = document.querySelector('#low');
 const myHumidity = document.querySelector('#humidity');
 
-const myKey = '4e3f763edd0a396977b65b283479ef2d';
+const myKey = '0e50adcc8e2b4233429e648c6eb25020';
 const myLat = '-23.298893276919777';
 const myLon = '-51.16919622755564';
 const myURL = "//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}&units=imperial";
