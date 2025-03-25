@@ -105,7 +105,7 @@ async function apiFetch() {
                 const card = document.createElement("div");
                 card.classList.add("spotlight-card");
                 card.innerHTML = `
-                    <img src="${member.image}" alt="${member.name} Logo">
+                    
                     <h3>${member.name}</h3>
                     <p><strong>Adress:</strong> ${member.address}</p>
                     <p><strong>Phone:</strong> ${member.phone}</p>
