@@ -56,10 +56,10 @@ const myHigh = document.querySelector('#high');
 const myLow = document.querySelector('#low');
 const myHumidity = document.querySelector('#humidity');
 
-const myKey = '0e50adcc8e2b4233429e648c6eb25020';
+const myKey = 'f5bb271fccf36d1e6a3efcfe8f111903';
 const myLat = '-23.298893276919777';
 const myLon = '-51.16919622755564';
-const myURL = "//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}&units=imperial";
+const myURL = '//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}&units=imperial';
 
 async function apiFetch() {
     try {
