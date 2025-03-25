@@ -142,8 +142,7 @@ ul#nav-menu {
     font-weight: bold;
 }
 
-footer {
-    display: flex-column;    
+footer {    
     gap: 2rem;
     padding: 1rem;
     align-items: center;
