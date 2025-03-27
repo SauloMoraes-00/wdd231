@@ -35,6 +35,21 @@
         align-items: end;
     }
 
+    .middle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        background-color: var(--secondary-color);
+    }
+
+    #spotlight {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: .3rem 0;
+        padding: 1rem;
+    }
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

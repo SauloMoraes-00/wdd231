@@ -99,11 +99,44 @@ ul#nav-menu {
     object-fit: cover;
   }
 
+#title {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-radius: 10px;
+    border: #1A1A1A;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+
+}
+
 .middle {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 10px;
+    border: #1A1A1A;
+}
+
+#events {
+    margin: .3rem 0;
+    padding: 1rem;
+}
+
+#currentWeather {
+    margin: .3rem 0;
+    padding: 1rem;
+}
+#spotlight {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    background-color: var(--secondary-color);
+    margin: .3rem 0;
+    padding: 1rem;
 }
 
 .company-item {

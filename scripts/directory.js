@@ -55,11 +55,13 @@ const myDesc = document.querySelector('#description');
 const myHigh = document.querySelector('#high');
 const myLow = document.querySelector('#low');
 const myHumidity = document.querySelector('#humidity');
+const myIcon = document.querySelector('#icon');
 
 const myKey = 'f5bb271fccf36d1e6a3efcfe8f111903';
 const myLat = '-23.298893276919777';
 const myLon = '-51.16919622755564';
-const myURL = '//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}&units=imperial';
+
+const myURL = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}&units=imperial`;
 
 async function apiFetch() {
     try {
@@ -67,7 +69,7 @@ async function apiFetch() {
       if (response.ok) {
         const data = await response.json();
         console.log(data); // testing only
-        // displayResults(data); // uncomment when ready
+        displayResults(data);
       } else {
           throw Error(await response.text());
       }
@@ -78,6 +80,19 @@ async function apiFetch() {
   
   apiFetch();
 
+  
+
+  function displayResults(data) {
+    console.log('hello'); 
+    const iconsrc = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    myIcon.setAttribute('src', iconsrc);
+    myIcon.setAttribute('alt', data.weather[0].description);
+    myTemp.innerHTML = 'Temperature: ' + data.main.temp + '°F';
+    myDesc.innerHTML = 'Description: ' + data.weather[0].description;
+    myHigh.innerHTML = 'High: ' + data.main.temp_max + '°F';
+    myLow.innerHTML = 'Low: ' + data.main.temp_min + '°F';
+    myHumidity.innerHTML = 'Humidity: ' + data.main.humidity + '%';
+  }
 
   document.addEventListener("DOMContentLoaded", () => {
     // Set current year dynamically
