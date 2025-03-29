@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Saulo Moraes">
+    <meta name="description" content="The Londrina Chamber of Commerce website serves as a resource hub for local businesses, offering event information, networking opportunities, business directories, and promoting local shopping to encourage economic growth and a strong business community.">
+    <title>Saulo Moraes - Join Us Page Londrina CoC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon"    href="../images/lcc.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/join.css">
+    <link rel="stylesheet" href="../styles/joinlarge.css">
+    <!-- Open Graph Meta Tags for Facebook -->
+    <meta property="og:title" content="Londrina Chamber of Commerce - Supporting Local Business" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="..\images\londrina.webp" />
+    <meta property="og:url" content="https://saulomoraes-00.github.io/wdd231/chamber/index.html" />
+    <meta property="og:description" content="The Londrina Chamber of Commerce website serves as a resource hub for local businesses, offering event information, networking opportunities, business directories, and promoting local shopping to encourage economic growth and a strong business community." />
+</head>
+<body>
+    <script src="../scripts/join.js" defer></script>
+    <header>
+        <img src="../images/logo.jpg" alt="Londrina Chamber of Commerce Logo" class="logo">
+        <span>Londrina Chamber of Commerce</span>
+        <button id="myButton"></button>
+        <nav id="animeted-nav">
+            <ul id="nav-menu" >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="join">
+        <form method="get" action="thankyou.html">
+            <label>
+                First Name:
+                <input type="text" name="first_name" title="Enter your first name" autocomplete="given-name" required>
+            </label>
+            
+            <label>
+                Last Name:
+                <input type="text" name="last_name" title="Enter your last name" autocomplete="family-name" required>
+            </label>
+            
+            <label>
+                Organizational Title:
+                <input type="text" name="org_title" title="Enter your organizational title" 
+                       autocomplete="organization-title" pattern="^[A-Za-z\-\s]{7,}$">
+            </label>
+            
+            <label>
+                Email:
+                <input type="email" name="email" title="Enter your email" autocomplete="email" placeholder="example@domain.com" required>
+            </label>
+            
+            <label>
+                Mobile Phone:
+                <input type="tel" name="mobile" title="Enter your mobile phone number" autocomplete="tel" required>
+            </label>
+            
+            <label>
+                Business/Organization Name:
+                <input type="text" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+            </label>
+            
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label><input type="radio" name="membership" value="np" required> NP Membership (Non-Profit - Free)</label>
+                <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+            </fieldset>
+            
+            <label>
+                Business/Organization Description:
+                <textarea name="org_description" title="Describe your business or organization"></textarea>
+            </label>
+            
+            <input type="hidden" name="timestamp" id="timestamp">
+            
+            <input type="submit" value="Join Chamber">
+        </form>
+        <div class="membership-cards">
+            <div class="card" onclick="openModal('np')">
+                <h3>Non Profit Membership</h3>
+                <button>Learn More</button>
+            </div>
+            <div class="card" onclick="openModal('bronze')">
+                <h3>Bronze Membership</h3>
+                <button>Learn More</button>
+            </div>
+            <div class="card" onclick="openModal('silver')">
+                <h3>Silver Membership</h3>
+                <button>Learn More</button>
+            </div>
+            <div class="card" onclick="openModal('gold')">
+                <h3>Gold Membership</h3>
+                <button>Learn More</button>
+            </div>
+        </div>
+        
+        <!-- Modals -->
+        <div id="modal-np" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('np')">&times;</span>
+                <h2>Non Profit Membership Benefits</h2>
+                <p>Access to community resources, free training sessions, and networking opportunities.</p>
+            </div>
+        </div>
+        
+        <div id="modal-bronze" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('bronze')">&times;</span>
+                <h2>Bronze Membership Benefits</h2>
+                <p>Discounted event tickets, featured listings, and advertising opportunities.</p>
+            </div>
+        </div>
+        
+        <div id="modal-silver" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('silver')">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <p>All Bronze benefits plus premium training sessions and increased advertising exposure.</p>
+            </div>
+        </div>
+        
+        <div id="modal-gold" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('gold')">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <p>All Silver benefits plus priority support, event sponsorships, and homepage spotlights.</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="ChamberAdress">
+            <h2>Chamber of Commerce</h2>
+            <p>123 Main Street</p>
+            <p>Londrina, PR 86000</p>
+            <p>Phone: (555) 555-5555</p>
+        </div>
+        <div class="SocialMedia">
+            <h2>Connect With Us</h2>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="../images/face.png" alt="Facebook Logo"></a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><img src="../images/x.png" alt="Twitter Logo"></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="../images/insta.jpg" alt="Instagram Logo"></a>  
+        </div>
+        <div>
+            <p>&copy; <span id="currentyear"></span> Saulo Moraes | Brasil</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>            
+</body>
+</html>
