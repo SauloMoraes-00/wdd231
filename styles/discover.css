@@ -1,0 +1,157 @@
+:root {
+    --primary-color: #003366;
+    --secondary-color: #d0d0c8;
+    --background-color: #ffffff;
+    --text-color: #1A1A1A;
+    --font-family: 'Arial', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    grid-template-rows: auto auto;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-family: var(--font-family);
+    padding: 1rem 2vw;
+}
+
+a img {
+    width: 20%;
+    height: auto;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    grid-column: 1 / 3;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    transition: grid-template-rows 0.5s ease-in-out;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+ul#nav-menu {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 3;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav a {
+    color: var(--background-color);
+    text-decoration: none;
+    display: block;
+    padding: .75rem 2vw;
+}
+
+#myButton {
+    font-size: 2rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-family: var(--font-family);
+    padding: .25rem 2vw;
+    border: none;
+    cursor: pointer;
+    text-align: right;
+    width: 100%;
+}
+
+#myButton::before {
+    content: '☰';
+}
+
+#myButton.open::before {
+    content: 'X';
+}
+
+li.active a {
+    background-color: #05478a;
+}
+
+ul#nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer {    
+    gap: 2rem;
+    padding: 1rem;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.sidebar {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .place-card {
+    display: grid;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    gap: 0.5rem;
+    padding: 1rem;
+  
+    /* Default: mobile first (small screens) */
+    grid-template-areas:
+      "name"
+      "photo"
+      "description"
+      "address";
+    grid-template-columns: 1fr;
+  }
+  
+  .place-card h2 {
+    grid-area: name;
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  
+  .place-card img {
+    grid-area: photo;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .place-card .description {
+    grid-area: description;
+    margin: 0.5rem 0;
+  }
+  
+  .place-card .address {
+    grid-area: address;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  

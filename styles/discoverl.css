@@ -1,0 +1,59 @@
+@media (min-width: 1025px) {
+    
+    #myButton {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    ul#nav-menu {
+        display: flex !important;  
+        flex-direction: row;       
+        justify-content: flex-end; 
+        align-items: center;
+        gap: 1rem; 
+        padding: 0;
+        margin: 0;
+    }
+
+    ul#nav-menu li {
+        list-style: none;
+    }
+
+    ul#nav-menu a {
+        white-space: nowrap; 
+        padding: 0.75rem 1rem;
+    }
+
+    ul#nav-menu a:hover {
+        background-color: var(--secondary-color);
+    }
+
+    header {
+        align-items: end;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+
+    .place-card {
+        grid-template-areas:
+          "name photo"
+          "description photo"
+          "address photo";
+        grid-template-columns: 1fr 50%;
+        align-items: center;
+      }
+    
+      .place-card img {
+        height: 100%;
+      }
+}
