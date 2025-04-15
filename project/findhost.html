@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice & Gather - Find/Host a Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="icon" href="Images/favicon.ico">
+    <meta name="description" content="Find tabletop gaming groups near you - D&D, Catan, Magic and more">
+    <meta property="og:title" content="Dice & Gather - Tabletop Gaming Community">
+    <meta property="og:image" content="images/social-preview.jpg">
+    <script type="module" src="scripts/findhost.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-container">
+                <div class="logo">Dice & Gather</div>
+                <div class="hamburger">&#9776;</div>
+                <div class="nav-links">
+                    <a href="project.html">Home</a>
+                    <a href="Find-Host.html">Find/Host a Game</a>
+                    <a href="#">Manuals</a>
+                    <a href="About.html">About</a>
+                </div>
+                <button class="cta-button">Login/Sign-up</button>
+            </div>
+        </nav>        
+
+        <section class="featured-games">
+            <h2>Featured Games</h2>
+            <div class="game-grid">
+                <div class="game-card dnd">
+                    <h3>Dungeons & Dragons</h3>
+                </div>
+                <div class="game-card catan">
+                    <h3>Catan</h3>
+                </div>
+                <div class="game-card magic">
+                    <h3>Magic: The Gathering</h3>
+                </div>
+                <div class="game-card warhammer">
+                    <h3>Warhammer</h3>
+                </div>
+            </div>
+        </section>
+        <section class="all-games">
+            <div class="game-filters">
+              <button class="filter-button active" data-category="all">All Games</button>
+              <button class="filter-button" data-category="rpg">RPGs</button>
+              <button class="filter-button" data-category="board">Board Games</button>
+              <button class="filter-button" data-category="card">Card Games</button>
+            </div>
+            <div class="listings-grid"></div>
+          </section>
+
+        <section class="host-game">
+            <h2>Host a Game</h2>
+            <form action="thanyou.html" method="get">
+                <label for="name">Game Name:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="host">Host Name:</label>
+                <input type="text" id="host" name="host" required>
+            
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+            
+                <label for="slots">Player Slots (e.g., 1/4):</label>
+                <input type="text" id="slots" name="slots" required pattern="\d+\/\d+" title="Format: current/maximum players">
+            
+                <label for="type">Game Type:</label>
+                <select id="type" name="type" required>
+                    <option value="">Select a Type</option>
+                    <option value="board">Board Game</option>
+                    <option value="card">Card Game</option>
+                    <option value="miniatures">Miniatures</option>
+                    <option value="rpg">RPG</option>
+                </select>
+            
+                <label for="date">Game Date:</label>
+                <input type="date" id="date" name="date" required>
+            
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            
+                <button type="submit" class="cta-button">Set Game</button>
+            </form>           
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2023 Dice & Gather. All rights reserved.</p>
+            <p>
+                <a href="#">FAQ</a> |
+                <a href="#">Terms</a> |
+                <a href="#">Privacy</a>
+            </p>
+            <p>Follow us: 
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

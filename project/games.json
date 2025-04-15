@@ -1,0 +1,203 @@
+[
+  {
+    "id": 1,
+    "name": "Dungeons & Dragons",
+    "host": "John Doe",
+    "location": "Online",
+    "slots": "3/5",
+    "type": "rpg",
+    "date": "2023-12-15",
+    "description": "5e campaign, new players welcome"
+  },
+  {
+    "id": 2,
+    "name": "Pathfinder Adventure",
+    "host": "Alice Smith",
+    "location": "Londrina, Paraná",
+    "slots": "2/4",
+    "type": "rpg",
+    "date": "2024-01-10",
+    "description": "Beginner-friendly dungeon crawl"
+  },
+  {
+    "id": 3,
+    "name": "Call of Cthulhu",
+    "host": "Mark Johnson",
+    "location": "Online",
+    "slots": "1/5",
+    "type": "rpg",
+    "date": "2024-02-20",
+    "description": "1920s horror mystery"
+  },
+  {
+    "id": 4,
+    "name": "Catan",
+    "host": "Nina Torres",
+    "location": "Londrina, Paraná",
+    "slots": "4/6",
+    "type": "board",
+    "date": "2024-03-05",
+    "description": "Classic resource trading game"
+  },
+  {
+    "id": 5,
+    "name": "Magic: The Gathering",
+    "host": "Derek Lee",
+    "location": "Online",
+    "slots": "5/5",
+    "type": "card",
+    "date": "2024-04-12",
+    "description": "Commander format night"
+  },
+  {
+    "id": 6,
+    "name": "Ticket to Ride",
+    "host": "Emily Nguyen",
+    "location": "Londrina, Paraná",
+    "slots": "2/6",
+    "type": "board",
+    "date": "2024-05-01",
+    "description": "Cross-country train adventure"
+  },
+  {
+    "id": 7,
+    "name": "Pokémon TCG",
+    "host": "Carlos Rivera",
+    "location": "Londrina, Paraná",
+    "slots": "3/4",
+    "type": "card",
+    "date": "2024-06-10",
+    "description": "Casual play and trading"
+  },
+  {
+    "id": 8,
+    "name": "Gloomhaven",
+    "host": "Samantha Green",
+    "location": "Online",
+    "slots": "1/5",
+    "type": "board",
+    "date": "2024-07-04",
+    "description": "Epic cooperative campaign"
+  },
+  {
+    "id": 9,
+    "name": "Warhammer 40K",
+    "host": "Luke Bennett",
+    "location": "Londrina, Paraná",
+    "slots": "0/4",
+    "type": "board",
+    "date": "2024-08-20",
+    "description": "Tabletop miniature battles"
+  },
+  {
+    "id": 10,
+    "name": "Yu-Gi-Oh!",
+    "host": "Katie Morales",
+    "location": "Online",
+    "slots": "2/3",
+    "type": "card",
+    "date": "2024-09-15",
+    "description": "Tournament practice"
+  },
+  {
+    "id": 11,
+    "name": "Pandemic",
+    "host": "Ryan Chen",
+    "location": "Londrina, Paraná",
+    "slots": "3/5",
+    "type": "board",
+    "date": "2024-10-09",
+    "description": "Save the world together"
+  },
+  {
+    "id": 12,
+    "name": "Dungeon Mayhem",
+    "host": "Tara White",
+    "location": "Londrina, Paraná",
+    "slots": "4/6",
+    "type": "card",
+    "date": "2024-11-22",
+    "description": "Fast-paced dungeon brawl"
+  },
+  {
+    "id": 13,
+    "name": "7 Wonders",
+    "host": "Jake Allen",
+    "location": "Online",
+    "slots": "2/4",
+    "type": "board",
+    "date": "2024-12-01",
+    "description": "Civilization building card game"
+  },
+  {
+    "id": 14,
+    "name": "Dungeon World",
+    "host": "Lily Adams",
+    "location": "Londrina, Paraná",
+    "slots": "3/5",
+    "type": "rpg",
+    "date": "2025-01-05",
+    "description": "Narrative-driven fantasy roleplay"
+  },
+  {
+    "id": 15,
+    "name": "Arkham Horror LCG",
+    "host": "Tom Brady",
+    "location": "Londrina, Paraná",
+    "slots": "1/5",
+    "type": "card",
+    "date": "2025-02-14",
+    "description": "Cooperative Lovecraftian adventure"
+  },
+  {
+    "id": 16,
+    "name": "Shadowrun",
+    "host": "Alex Turner",
+    "location": "Online",
+    "slots": "2/6",
+    "type": "rpg",
+    "date": "2025-03-08",
+    "description": "Cyberpunk meets fantasy"
+  },
+  {
+    "id": 17,
+    "name": "Scythe",
+    "host": "Maria Garcia",
+    "location": "Londrina, Paraná",
+    "slots": "4/5",
+    "type": "board",
+    "date": "2025-04-20",
+    "description": "Alternate-history 1920s Europe"
+  },
+  {
+    "id": 18,
+    "name": "Netrunner",
+    "host": "David Kim",
+    "location": "Online",
+    "slots": "3/4",
+    "type": "card",
+    "date": "2025-05-15",
+    "description": "Asymmetric cyberpunk card game"
+  },
+  {
+    "id": 19,
+    "name": "Root",
+    "host": "Sophia Patel",
+    "location": "Londrina, Paraná",
+    "slots": "2/4",
+    "type": "board",
+    "date": "2025-06-10",
+    "description": "Asymmetric woodland warfare"
+  },
+  {
+    "id": 20,
+    "name": "Star Wars: Destiny",
+    "host": "Ethan Wright",
+    "location": "Online",
+    "slots": "1/4",
+    "type": "card",
+    "date": "2025-07-22",
+    "description": "Star Wars character battles"
+  }
+]
+  

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice & Gather - Site Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="icon" href="Images/favicon.ico">
+    <meta name="description" content="Find tabletop gaming groups near you - D&D, Catan, Magic and more">
+    <meta property="og:title" content="Dice & Gather - Tabletop Gaming Community">
+    <meta property="og:image" content="images/mainimg.webp">
+    <script type="module" src="scripts/project.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="nav-container">
+              <div class="logo">Dice & Gather</div>
+              <button id="mobileMenuButton" class="hamburger">☰</button>
+              <div id="mobileNav" class="nav-links">
+                <a href="project.html">Home</a>
+                <a href="findhost.html">Find/Host a Game</a>
+                <a href="#">Manuals</a>
+                <a href="about.html">About</a>
+              </div>
+              <button class="cta-button">Login/Sign-up</button>
+            </div>
+          </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Find Your Next Gaming Group!</h1>
+            <p>Discover players near you or host your own game—RPGs, board games, and more!</p>
+            <input type="text" placeholder="Enter your location">
+            <button class="cta-button">Find a Game!</button>
+        </section>
+
+
+        <!-- Featured Games Section -->
+        <section class="featured-games">
+            <h2>Featured Games</h2>
+            <div class="game-grid">
+                <div class="game-card dnd">
+                    <h3>Dungeons & Dragons</h3>
+                </div>
+                <div class="game-card catan">
+                    <h3>Catan</h3>
+                </div>
+                <div class="game-card magic">
+                    <h3>Magic: The Gathering</h3>
+                </div>
+                <div class="game-card warhammer">
+                    <h3>Warhammer</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-games">
+            <h2>Featured Games</h2>
+            <div class="listings-grid"></div>
+            <a href="findhost.html" class="cta-button">View All Games</a>
+        </section>
+        
+
+        <!-- Community & Reviews Section -->
+        <section class="community">
+            <h2>Community & Reviews</h2>
+            <div class="community-content">
+                <p>"I found my perfect D&D group thanks to Dice & Gather!" - Happy Player</p>
+                <p>Join our <a href="#">Discord</a> community for more fun!</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2023 Dice & Gather. All rights reserved.</p>
+            <p>
+                <a href="#">FAQ</a> |
+                <a href="#">Terms</a> |
+                <a href="#">Privacy</a>
+            </p>
+            <p>Follow us: 
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

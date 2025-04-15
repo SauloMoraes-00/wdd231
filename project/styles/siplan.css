@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --deep-red: #8B0000;
+    --gold: #FFD700;
+    --dark-brown: #3E2723;
+    --cream: #FAF3E0;
+    --text-color: #2c2c2c;
+}
+
+body {
+    font-family: 'Lora', serif;
+    background-color: var(--cream);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    color: var(--deep-red);
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 5px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border: 3px solid var(--dark-brown);
+}
+
+nav {
+    background-color: var(--deep-red);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: var(--gold);
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    margin: 0 15px;
+}
